@@ -1,14 +1,14 @@
 {
-  "genesis_time": "2019-12-21T12:48:06.790508Z",
-  "chain_id": "test-chain-ukzxKw",
+  "genesis_time": "2019-12-21T21:21:08.321969Z",
+  "chain_id": "test-chain-ZVxsxT",
   "consensus_params": {
     "block": {
-      "max_bytes": "22020096",
-      "max_gas": "-1",
+      "max_bytes": "200000",
+      "max_gas": "2000000",
       "time_iota_ms": "1000"
     },
     "evidence": {
-      "max_age": "100000"
+      "max_age": "1000000"
     },
     "validator": {
       "pub_key_types": [
@@ -18,45 +18,64 @@
   },
   "app_hash": "",
   "app_state": {
-    "gov": {
-      "starting_proposal_id": "1",
-      "deposits": null,
-      "votes": null,
-      "proposals": null,
-      "deposit_params": {
-        "min_deposit": [
-          {
-            "denom": "stake",
-            "amount": "10000000"
-          }
-        ],
-        "max_deposit_period": "172800000000000"
-      },
-      "voting_params": {
-        "voting_period": "172800000000000"
-      },
-      "tally_params": {
-        "quorum": "0.334000000000000000",
-        "threshold": "0.500000000000000000",
-        "veto": "0.334000000000000000"
-      }
+    "supply": {
+      "supply": []
     },
-    "params": null,
-    "crisis": {
-      "constant_fee": {
-        "denom": "stake",
-        "amount": "1000"
-      }
-    },
-    "evidence": {
+    "staking": {
       "params": {
-        "max_evidence_age": "120000000000"
+        "unbonding_time": "1814400000000000",
+        "max_validators": 100,
+        "max_entries": 7,
+        "historical_entries": 0,
+        "bond_denom": "astr"
       },
-      "evidence": []
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
+    "mint": {
+      "minter": {
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "astr",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "5256000"
+      }
+    },
+    "distribution": {
+      "fee_pool": {
+        "community_pool": [
+          {
+            "amount": "500000000000000000000000000",
+            "denom": "astr"
+          }
+        ]
+      },
+      "community_tax": "0.050000000000000000",
+      "base_proposer_reward": "0.010000000000000000",
+      "bonus_proposer_reward": "0.040000000000000000",
+      "withdraw_addr_enabled": true,
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
     },
     "auth": {
       "params": {
-        "max_memo_characters": "256",
+        "max_memo_characters": "512",
         "tx_sig_limit": "7",
         "tx_size_cost_per_byte": "10",
         "sig_verify_cost_ed25519": "590",
@@ -67980,59 +67999,46 @@
         }
       ]
     },
-    "staking": {
-      "params": {
-        "unbonding_time": "1814400000000000",
-        "max_validators": 100,
-        "max_entries": 7,
-        "historical_entries": 0,
-        "bond_denom": "stake"
-      },
-      "last_total_power": "0",
-      "last_validator_powers": null,
-      "validators": null,
-      "delegations": null,
-      "unbonding_delegations": null,
-      "redelegations": null,
-      "exported": false
-    },
-    "mint": {
-      "minter": {
-        "inflation": "0.130000000000000000",
-        "annual_provisions": "0.000000000000000000"
-      },
-      "params": {
-        "mint_denom": "stake",
-        "inflation_rate_change": "0.130000000000000000",
-        "inflation_max": "0.200000000000000000",
-        "inflation_min": "0.070000000000000000",
-        "goal_bonded": "0.670000000000000000",
-        "blocks_per_year": "6311520"
+    "crisis": {
+      "constant_fee": {
+        "denom": "astr",
+        "amount": "50000000000000000000000"
       }
     },
-    "distribution": {
-      "fee_pool": {
-        "community_pool": []
+    "upgrade": {},
+    "evidence": {
+      "params": {
+        "max_evidence_age": "1814400000000000"
       },
-      "community_tax": "0.020000000000000000",
-      "base_proposer_reward": "0.010000000000000000",
-      "bonus_proposer_reward": "0.040000000000000000",
-      "withdraw_addr_enabled": true,
-      "delegator_withdraw_infos": [],
-      "previous_proposer": "",
-      "outstanding_rewards": [],
-      "validator_accumulated_commissions": [],
-      "validator_historical_rewards": [],
-      "validator_current_rewards": [],
-      "delegator_starting_infos": [],
-      "validator_slash_events": []
+      "evidence": []
     },
-    "genutil": {
-      "gentxs": null
+    "params": null,
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "astr",
+            "amount": "5000000000000000000000"
+          }
+        ],
+        "max_deposit_period": "172800000000000"
+      },
+      "voting_params": {
+        "voting_period": "172800000000000"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
+      }
     },
     "slashing": {
       "params": {
-        "signed_blocks_window": "100",
+        "signed_blocks_window": "10000",
         "min_signed_per_window": "0.500000000000000000",
         "downtime_jail_duration": "600000000000",
         "slash_fraction_double_sign": "0.050000000000000000",
@@ -68041,12 +68047,11 @@
       "signing_infos": {},
       "missed_blocks": {}
     },
-    "supply": {
-      "supply": []
+    "genutil": {
+      "gentxs": null
     },
     "bank": {
       "send_enabled": true
-    },
-    "upgrade": {}
+    }
   }
 }
