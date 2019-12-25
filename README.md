@@ -6,7 +6,7 @@ The goal of Straightedge is to be a general-purpose smart contracting platform g
 
 ## STR Token
 
-The native token of the Straightedge network is known as STR.  The smallest denomination of STR is called `astr`.  There are `10^18` astr in 1 STR.  The SI prefix for `10^-18` is called "atto", thus `astr` is short for `atto-STR`.  It also sounds like "astro", a fitting name for Straightedge as a Cosmic Smart Contracting platform.
+The native token of the Straightedge network is known as STR.  The smallest denomination of STR is called `astr`.  There are `10^18` astr in 1 STR and the SI prefix for `10^-18` is called "atto", thus `astr` is short for `atto-STR`.  It also sounds like "astro", a fitting name for Straightedge as a Cosmic Smart Contracting platform.
 
 The initial supply of the STR token is 5 billion STR.  Of this, 90% is distributed based on the participation from the Edgeware lockdrop, modified to ignore signals from deployers of contracts.  Further details about this matter can be found in [this blog post](https://medium.com/straightedge/on-the-straightedge-genesis-block-d073e78b9b02).
 
