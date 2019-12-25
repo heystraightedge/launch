@@ -31,7 +31,7 @@ strcli keys add <your-key-name> --algo sr25519 --recover
 
 ```sh
 strd gentx \
-  --amount 50000000ukava \
+  --amount <amount>astr \
   --min-self-delegation <min_self_delegation> \
   --commission-rate <commission_rate> \
   --commission-max-rate <commission_max_rate> \
@@ -40,7 +40,7 @@ strd gentx \
   --name <key_name>
 ```
 
-**NOTE:**  If you would like to override the memo field use the `--ip` and `--node-id` flags for the `kvd gentx` command above. `pubkey` can be obtained using `strd tendermint show-validator`
+**NOTE:**  If you would like to override the memo field use the `--ip` and `--node-id` flags for the `strd gentx` command above. `pubkey` can be obtained using `strd tendermint show-validator`
 
 This will produce a file in the `~/.strd/config/gentx/` folder that has a name with the format `gentx-<node_id>.json`.
 
