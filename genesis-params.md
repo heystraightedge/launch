@@ -2,8 +2,6 @@
 
 ## Tendermint Params
 
-This genesis time puts global nighttime in the pacific (early-ish for San Francisco and late-ish for Korea: [Timezone chart](https://www.timeanddate.com/worldclock/meetingtime.html?month=11&day=5&year=2019&p1=224&p2=43&p3=136&p4=37&p5=33&p6=235&iv=0)).
-
 ```json
     "genesis_time": "TODO",
     "chain_id": "straightedge-1",
@@ -43,20 +41,25 @@ Start with sends enabled.
 
 The list of gentxs to be filled in automatically.
 
+```json
     "genutil": {
         "gentxs": [...]
     },
+```
 
 ### Crisis
 
 Reference: [https://github.com/cosmos/cosmos-sdk/tree/master/x/crisis/spec](https://github.com/cosmos/cosmos-sdk/tree/master/x/crisis/spec)
+Crisis fee is 50000 STR.
 
+```json
     "crisis": {
         "constant_fee": {
             "denom": "astr",
             "amount": "50000000000000000000000"
         }
     },
+```
 
 ### Distribution
 
@@ -64,11 +67,11 @@ These parameters are the same as cosmoshub-2, except:
 
 - `withdraw_addr_enabled` is true (we are starting with sends enabled)
 - The community pool tax is set to 5%
-- The community pool is initiated with 10% of the initial supply (the equivalent of the Founders Reward from Edgeware).  This is intended to be distributed by governance as a reward to the individuals and entities who aided in the launch of the network.
+- The community pool is initiated with 10% of the initial supply - 500000000 STR (the equivalent of the Founders Reward from Edgeware).  This is intended to be distributed by governance as a reward to the individuals and entities who aided in the launch of the network.
 
 ```json
     "distribution": {
-        "fee_pool": {
+      "fee_pool": {
         "community_pool": [
           {
             "amount": "500000000000000000000000000",
@@ -117,6 +120,7 @@ These parameters are the same as cosmohub-3, except:
 ### Auth
 
 These parameters are the same as cosmoshub-2 and 1.
+Instead of adding a `sig_verify_cost_sr25519` param, we just reuse `sig_verify_cost_ed25519` as the gas cost for SR25519 signature verification.
 Note: accounts are now stored under `auth` rather than `genaccounts`
 
 ```json
@@ -142,12 +146,7 @@ Note: accounts are now stored under `auth` rather than `genaccounts`
 
 These parameters are the same as cosmoshub-2 and 1, except:
 
-- `max_deposit` Cosmoshub-2's value is 512atom, or $2048 at an average $4/atom. So this is set to 4500kava to keep it comparable.
-
-Notes:
-
-- voting period must be less than unbonding period otherwise people could vote, redelegate, then vote again.
-- `max_deposit_period` and `voting_period` are 14 days
+- `min_deposit` is set to 5000 STR.
 
 ```json
     "gov": {
@@ -179,10 +178,6 @@ Notes:
 
 These parameters are the same as cosmoshub-2 and 1.
 
-Notes:
-
-- `unbonding_time` is  21 days
-
 ```json
     "staking": {
       "params": {
@@ -204,26 +199,32 @@ Notes:
 
 ### Slashing
 
-These parameters are the same as cosmoshub-2 and 1.
-
-Notes:
-
-- `max_evidence_age` is 21 days, must be the same as unbonding period
-- `signed_blocks_window` is 16.67hrs given a 6s block time.
-- `downtime_jail_duration` is 10min
+These parameters are the same as cosmoshub-3.
 
 ```json
     "slashing": {
-        "params": {
-            "max_evidence_age": "1814400000000000",
-            "signed_blocks_window": "10000",
-            "min_signed_per_window": "0.050000000000000000",
-            "downtime_jail_duration": "600000000000",
-            "slash_fraction_double_sign": "0.050000000000000000",
-            "slash_fraction_downtime": "0.000100000000000000"
-        },
-        "signing_infos": {},
-        "missed_blocks": {}
+      "params": {
+        "signed_blocks_window": "10000",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+```
+
+### Evidence
+
+Max evidence age is the same as the unbonding period.
+
+```json
+    "evidence": {
+      "params": {
+        "max_evidence_age": "1814400000000000"
+      },
+      "evidence": []
     },
 ```
 
@@ -236,15 +237,5 @@ Note: neither `add-genesis-account` or `collect-gentx` modifies the supply. It's
         "supply": {
             "total": []
         }
-    }
-```
-
-### Validator Vesting
-
-This parameter sets the last block time for determining when vesting periods close after a chain restart. It's set to the zero unix time value for new chains.
-
-```json
-    "validatorvesting": {
-        "previous_block_time": "1970-01-01T00:00:00Z"
     }
 ```
