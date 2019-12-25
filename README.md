@@ -26,7 +26,7 @@ For instructions on how to add your lockdrop keys to the Straightedge CLI wallet
 
 ## Genesis Transactions
 
-You must have a balance in the genesis file to paritipate as a genesis validator.  Instructions for submitting genesis transactions can be found [here](./instructions.md).
+You must have a balance in the genesis file to paritipate as a genesis validator.  Instructions for submitting genesis transactions can be found [here](./gentxs/README.md).
 
 ## Recreating Genesis
 
