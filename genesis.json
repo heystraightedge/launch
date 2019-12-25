@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2019-12-21T21:21:08.321969Z",
-  "chain_id": "test-chain-ZVxsxT",
+  "genesis_time": "TODO",
+  "chain_id": "TODO",
   "consensus_params": {
     "block": {
       "max_bytes": "200000",
