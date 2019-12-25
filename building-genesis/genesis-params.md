@@ -63,9 +63,8 @@ Crisis fee is 50000 STR.
 
 ### Distribution
 
-These parameters are the same as cosmoshub-2, except:
+These parameters are the same as cosmoshub-3, except:
 
-- `withdraw_addr_enabled` is true (we are starting with sends enabled)
 - The community pool tax is set to 5%
 - The community pool is initiated with 10% of the initial supply - 500000000 STR (the equivalent of the Founders Reward from Edgeware).  This is intended to be distributed by governance as a reward to the individuals and entities who aided in the launch of the network.
 
@@ -119,9 +118,8 @@ These parameters are the same as cosmohub-3, except:
 
 ### Auth
 
-These parameters are the same as cosmoshub-2 and 1.
-Instead of adding a `sig_verify_cost_sr25519` param, we just reuse `sig_verify_cost_ed25519` as the gas cost for SR25519 signature verification.
-Note: accounts are now stored under `auth` rather than `genaccounts`
+These parameters are the same as cosmoshub-3.
+**Note: Instead of adding a `sig_verify_cost_sr25519` param, we just reuse `sig_verify_cost_ed25519` as the gas cost for SR25519 signature verification.**
 
 ```json
     "auth": {
@@ -144,7 +142,7 @@ Note: accounts are now stored under `auth` rather than `genaccounts`
 
 ### Gov
 
-These parameters are the same as cosmoshub-2 and 1, except:
+These parameters are the same as cosmoshub-3, except:
 
 - `min_deposit` is set to 5000 STR.
 
@@ -176,7 +174,7 @@ These parameters are the same as cosmoshub-2 and 1, except:
 
 ### Staking
 
-These parameters are the same as cosmoshub-2 and 1.
+These parameters are the same as cosmoshub-3.
 
 ```json
     "staking": {
