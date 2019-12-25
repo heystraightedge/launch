@@ -22,7 +22,7 @@ In the future, it is possible for the Straightedge to upgrade to support more sm
 
 In order to support the hard spoon of Edgeware lockdrop balances, we needed to add support of the SR25519 keys into the Cosmos SDK.  We would like to give special thanks to ChainSafe team for their help on some of this work.
 
-For instructions on how to add your lockdrop keys to the Straightedge CLI wallet, please follow the instructions here.
+For instructions on how to add your lockdrop keys to the Straightedge CLI wallet, please follow the instructions [here](https://github.com/heystraightedge/straightedge#importing-lockdrop-keys).
 
 ## Genesis Transactions
 
@@ -39,6 +39,7 @@ To recreate the genesis file, the following steps can be take:
 5. Generate [balances.json](building-genesis/balances.json) by running `node ./scripts/lockdrop.js --allocation`.  This constructs the file using on-chain data from Ethereum.  Note that an Ethereum archival node is neccesary for this step.
 6. Use `strd import-lockdrop-balances balances.json` to populate genesis with lockdrop balances.
 7. TODO: GenTxs
+8. TODO: Genesis Time
 
 ## Disclaimer
 
