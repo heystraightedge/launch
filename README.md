@@ -34,12 +34,12 @@ To recreate the genesis file, the following steps can be take:
 
 1. Creating new genesis file using `strd init`
 2. Change chain-id in genesis file to `straightedge-1`
-3. Modify the genesis parameters using the instructions [here](./genesis-params.md)
-4. Install the [straightedge-lockdrop](https://github.com/heystraightedge/straightedge-lockdrop) software and follow setup instructions.
-5. Generate [balances.json](building-genesis/balances.json) by running `node ./scripts/lockdrop.js --allocation`.  This constructs the file using on-chain data from Ethereum.  Note that an Ethereum archival node is neccesary for this step.
-6. Use `strd import-lockdrop-balances balances.json` to populate genesis with lockdrop balances.
-7. TODO: GenTxs
-8. TODO: Genesis Time
+3. TODO: Genesis Time
+4. Modify the genesis parameters using the instructions [here](./genesis-params.md)
+5. Install the [straightedge-lockdrop](https://github.com/heystraightedge/straightedge-lockdrop) software and follow setup instructions.
+6. Generate [balances.json](building-genesis/balances.json) by running `node ./scripts/lockdrop.js --allocation`.  This constructs the file using on-chain data from Ethereum.  Note that an Ethereum archival node is neccesary for this step.
+7. Use `strd import-lockdrop-balances balances.json` to populate genesis with lockdrop balances.
+8. TODO: GenTxs
 
 ## Disclaimer
 
