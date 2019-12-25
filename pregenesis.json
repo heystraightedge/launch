@@ -1,6 +1,6 @@
 {
   "genesis_time": "TODO",
-  "chain_id": "TODO",
+  "chain_id": "straightedge-1",
   "consensus_params": {
     "block": {
       "max_bytes": "200000",

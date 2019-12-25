@@ -20,14 +20,22 @@ make install
 strd init <your-validator-moniker> --chain-id straightedge-1
 ```
 
-2. Recover your lockdrop account key into the Straightedge CLI Wallet
+2. Replace generated genesis file with pregenesis.json
+
+```sh
+cd ~/.strd/config
+rm genesis.json
+curl https://raw.githubusercontent.com/heystraightedge/mainnet/master/pregenesis.json -o genesis.json
+```
+
+3. Recover your lockdrop account key into the Straightedge CLI Wallet
 
 ```sh
 strcli keys add <your-key-name> --algo sr25519 --recover
 <insert-mnemonic-here>
 ```
 
-3. Sign a genesis transaction
+4. Sign a genesis transaction
 
 ```sh
 strd gentx \
@@ -44,9 +52,9 @@ strd gentx \
 
 This will produce a file in the `~/.strd/config/gentx/` folder that has a name with the format `gentx-<node_id>.json`.
 
-4. Rename the gentx file to `<validator-moniker>-gentx.json`
-5. Fork and clone this repo and copy you gentx file into the gentx folder
-   
+5. Rename the gentx file to `<validator-moniker>-gentx.json`
+6. Fork and clone this repo and copy you gentx file into the gentx folder
+  
 ```sh
 git clone https://github.com/<your-github-handle>/mainnet
 cp ~/.strd/config/gentx/<validator-moniker>-gentx.json mainet/gentxs
@@ -55,5 +63,5 @@ git commit -m "added <validator-moniker> gentx"
 git push
 ```
 
-6. Open a PR to this repo with your gentx
-7. Prepare to run a validating node at genesis time
+7. Open a PR to this repo with your gentx
+8. Prepare to run a validating node at genesis time
