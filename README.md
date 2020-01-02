@@ -4,6 +4,8 @@ This repository is to coordinate the relaunch of the Straightedge mainnet, rebui
 
 The goal of Straightedge is to be a general-purpose smart contracting platform governed by the holders of the STR token.
 
+The codebase can be found [here](https://github.com/heystraightedge/straightedge).
+
 ## STR Token
 
 The native token of the Straightedge network is known as STR.  The smallest denomination of STR is called `astr`.  There are `10^18` astr in 1 STR and the SI prefix for `10^-18` is called "atto", thus `astr` is short for `atto-STR`.  It also sounds like "astro", a fitting name for Straightedge as a Cosmic Smart Contracting platform.
