@@ -15,9 +15,9 @@ This document includes instructions for validators who intend to participate in 
 ```sh
 git clone https://github.com/heystraightedge/straightedge
 cd straightedge
-git checkout v0.0.1
+git checkout wasm
 make install
-strd init <your-validator-moniker> --chain-id straightedge-1
+strd init <your-validator-moniker>
 ```
 
 2. Replace generated genesis file with pregenesis.json
@@ -25,7 +25,7 @@ strd init <your-validator-moniker> --chain-id straightedge-1
 ```sh
 cd ~/.strd/config
 rm genesis.json
-curl https://raw.githubusercontent.com/heystraightedge/mainnet/master/pregenesis.json -o genesis.json
+curl https://raw.githubusercontent.com/heystraightedge/testnet/master/pregenesis.json -o genesis.json
 ```
 
 3. Recover your lockdrop account key into the Straightedge CLI Wallet
