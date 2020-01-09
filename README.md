@@ -1,8 +1,10 @@
-# Straightedge Testnet Launch
+# Straightedge Mainnet Launch
 
-This repository is to coordinate the launch of the pre-mainnet Straightedge testnet, rebuilt on the Cosmos SDK.
+This repository is to coordinate the relaunch of the Straightedge mainnet, rebuilt on the Cosmos SDK.
 
-The goal of Straightedge is to be a general-purpose smart contracting platform governed by the holders of the STR token.
+We are currently working on launching a pre-mainnet testnet.  Please see github.com/heystraightedge/testnet
+
+<!-- The goal of Straightedge is to be a general-purpose smart contracting platform governed by the holders of the STR token.
 
 The codebase can be found [here](https://github.com/heystraightedge/straightedge).
 
@@ -36,4 +38,4 @@ If you wish to verify the generation of [pregenesis.json](pregenesis.json) yours
 
 ## Disclaimer
 
-Please note that the Straightedge blockchain is highly experimental software. In these early days, we can expect to have issues, updates, and bugs. The existing tools require advanced technical skills and involve risks which are outside of the control of the developers. Any use of this open source Apache 2.0 licensed software is done at your own risk and on a “AS IS” basis, without warranties or conditions of any kind, and any and all liability of the developers for damages arising in connection to the software is excluded. Please exercise extreme caution!
+Please note that the Straightedge blockchain is highly experimental software. In these early days, we can expect to have issues, updates, and bugs. The existing tools require advanced technical skills and involve risks which are outside of the control of the developers. Any use of this open source Apache 2.0 licensed software is done at your own risk and on a “AS IS” basis, without warranties or conditions of any kind, and any and all liability of the developers for damages arising in connection to the software is excluded. Please exercise extreme caution! -->
