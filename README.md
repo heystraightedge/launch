@@ -26,7 +26,7 @@ Similar to the [Cosmos Hub codebase (Gaia)](https://github.com/cosmos/gaia), the
 
 It also includes the [CosmWasm module](https://github.com/cosmwasm/wasmd/tree/master/x/wasm), a project built to allow WebAssembly-based smart contracting in the Cosmos SDK.  For more information of CosmWasm and tutorials on how to get started with using it, please check out the [CosmWasm website](https://www.cosmwasm.com/).
 
-<!-- In the future, it is possible for the Straightedge to upgrade to support more smart contracting systems, such as the Cosmos SDK's [EVM module](https://github.com/chainsafe/ethermint). -->
+In the future, it is possible for the Straightedge to upgrade to support more smart contracting systems, such as the Cosmos SDK's [EVM module](https://github.com/chainsafe/ethermint).
 
 In order to support the hard spoon of Edgeware lockdrop balances, we needed to add support of the SR25519 keys into the Cosmos SDK.  We would like to give special thanks to ChainSafe team for their help on some of this work.
 
