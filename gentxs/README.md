@@ -36,7 +36,7 @@ strcli keys add <your-key-name> --algo sr25519 --recover
 <insert-mnemonic-here>
 ```
 
-1. Check your [astr](../README.md#str-token) balance in the genesis allocation
+1. Check your [astr](../README.md#str-token) balance in the genesis allocation using the address created in the previous command.
 
 ```sh
 grep -A 6 <your-address> genesis.json
@@ -48,7 +48,7 @@ grep -A 6 <your-address> genesis.json
 strd tendermint show-validator
 ```
 
-6. Sign a genesis transaction
+6. Sign a genesis transaction.  Fill in the consensus pubkey, an initial stake less than your balance, commission rate info, and the key's name in the CLI wallet.
 
 ```sh
 strd gentx \
