@@ -26,7 +26,7 @@ strd init <your-validator-moniker>
 ```sh
 cd ~/.strd/config
 rm genesis.json
-curl https://raw.githubusercontent.com/heystraightedge/testnet/master/pregenesis.json -o genesis.json
+curl https://raw.githubusercontent.com/heystraightedge/mainnet/master/pregenesis.json -o genesis.json
 ```
 
 3. Recover your lockdrop account key into the Straightedge CLI Wallet
