@@ -9,13 +9,14 @@ This document includes instructions for validators who intend to participate in 
 
 #### Prepare Software
 
-1. Install `strd` branch `master`
+1. Install `strd` tag `v0.1.0`
 
-##### Requires Go 1.13+ and gcc
+##### Requires Go 1.14+ and gcc
 
 ```sh
 git clone https://github.com/heystraightedge/straightedge
 cd straightedge
+git checkout v0.1.0
 make install
 strd init <your-validator-moniker>
 ```
@@ -35,7 +36,7 @@ strcli keys add <your-key-name> --algo sr25519 --recover
 <insert-mnemonic-here>
 ```
 
-4. Check your balance in the genesis allocation
+1. Check your [astr](../README.md#str-token) balance in the genesis allocation
 
 ```sh
 grep -A 6 <your-address> genesis.json
@@ -68,12 +69,13 @@ This will produce a file in the `~/.strd/config/gentx/` folder that has a name w
 8. Fork and clone this repo and copy you gentx file into the gentx folder
   
 ```sh
-git clone https://github.com/<your-github-handle>/testnet
-cp ~/.strd/config/gentx/<validator-moniker>-gentx.json mainet/gentxs
+git clone https://github.com/<your-github-handle>/mainnet
+cd mainnet
+cp ~/.strd/config/gentx/<validator-moniker>-gentx.json gentxs
 git add ./gentxs
 git commit -m "added <validator-moniker> gentx"
 git push
 ```
 
 9. Open a PR to this repo with your gentx
-10. Submit by January 12, 2020 at 12:00pm UTC.
+10. Submit by September 8, 2020 at 12:00pm UTC.

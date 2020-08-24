@@ -2,12 +2,12 @@
 
 ## Tendermint Params
 
-Set genesis time to February 23, 2020 at 12:00pm UTC time.
-Set chain id to `straightedge-testnet-1`.
+Set genesis time to September 15, 2020 at 12:00pm UTC time.
+Set chain id to `straightedge-1`.
 
 ```json
-    "genesis_time": "2020-01-12T12:00:00.00000Z",
-    "chain_id": "straightedge-testnet-1",
+    "genesis_time": "2020-09-15T12:00:00.00000Z",
+    "chain_id": "straightedge-1",
 ```
 
 These parameters are the same as cosmoshub-3.
@@ -35,21 +35,21 @@ These parameters are the same as cosmoshub-3.
 
 ### Router
 
-For the testnet, we will start with the `wasm` routes disabled.
+For the testnet, we will start with the no routes disabled.
 ```json
     "router": {
-      "disabled_routes": ["wasm"]
+      "disabled_routes": []
     },
 ```
 
 ### Wasm
 
-The wasm module will be permissionless.
+The wasm module will be begin with code upload disabled.  It will be enabled by a governance proposal.
 ```json
     "wasm": {
       "params": {
         "code_upload_access": {
-          "permission": "Everybody"
+          "permission": "Nobody"
         },
         "instantiate_default_permission": "Everybody"
       }
