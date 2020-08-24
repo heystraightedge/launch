@@ -68062,7 +68062,7 @@
     "wasm": {
       "params": {
         "code_upload_access": {
-          "permission": "Everybody"
+          "permission": "Nobody"
         },
         "instantiate_default_permission": "Everybody"
       }
