@@ -1,8 +1,6 @@
 # Straightedge Mainnet Launch
 
-This repository is to coordinate the launch of the Straightedge mainnet, rebuilt on the Cosmos SDK.
-
-The goal of Straightedge is to be a general-purpose smart contracting platform governed by the holders of the STR token.
+This repository is to coordinate the launch of the Straightedge mainnet, rebuilt on the Cosmos SDK.  Straightedge is a general-purpose smart contracting platform governed by the holders of the STR token.
 
 The codebase can be found [here](https://github.com/heystraightedge/straightedge).
 
