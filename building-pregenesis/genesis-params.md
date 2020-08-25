@@ -58,9 +58,10 @@ The wasm module will be begin with code upload disabled.  It will be enabled by 
 
 ### Gov
 
-These parameters are the same as cosmoshub-3, except:
-
 - `min_deposit` is set to 5000 STR.
+- `deposit_period` and `voting_period` are both set to 7 days.
+- Voting threshold and quorum are set to 50% and 33% respectively, the same as `cosmoshub-3`.
+- The minimum quorum is set to 25%.
 
 ```json
     "gov": {
@@ -75,13 +76,13 @@ These parameters are the same as cosmoshub-3, except:
             "amount": "5000000000000000000000"
           }
         ],
-        "max_deposit_period": "172800000000000"
+        "max_deposit_period": "1209600000000000"
       },
       "voting_params": {
-        "voting_period": "172800000000000"
+        "voting_period": "1209600000000000"
       },
       "tally_params": {
-        "quorum": "0.334000000000000000",
+        "quorum": "0.250000000000000000",
         "threshold": "0.500000000000000000",
         "veto": "0.334000000000000000"
       }
