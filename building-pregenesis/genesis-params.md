@@ -2,15 +2,15 @@
 
 ## Tendermint Params
 
-Set genesis time to September 15, 2020 at 12:00pm UTC time.
+Set genesis time to September 15, 2020 at 6:00pm UTC time.
 Set chain id to `straightedge-1`.
 
 ```json
-    "genesis_time": "2020-09-15T12:00:00.00000Z",
+    "genesis_time": "2020-09-15T18:00:00.00000Z",
     "chain_id": "straightedge-1",
 ```
 
-These parameters are the same as cosmoshub-3.
+These parameters are the same as cosmoshub-3, except that the `max_age_duration` for evidence is 2 weeks instead of 3 weeks. 
 
 ```json
   "consensus_params": {
@@ -21,7 +21,7 @@ These parameters are the same as cosmoshub-3.
     },
     "evidence": {
       "max_age_num_blocks": "1000000",
-      "max_age_duration": "1814400000000000"
+      "max_age_duration": "1209600000000000"
     },
     "validator": {
       "pub_key_types": [
@@ -178,7 +178,7 @@ Max evidence age should be set to the same as the unbonding period.
 ```json
     "evidence": {
       "params": {
-        "max_evidence_age": "1814400000000000"
+        "max_evidence_age": "1209600000000000"
       },
       "evidence": []
     },
@@ -196,12 +196,12 @@ The list of gentxs to be filled in automatically later.
 
 ### Staking
 
-These parameters are the same as cosmoshub-3 except `bond_denom` is `astr`.
+These parameters are the same as cosmoshub-3 except `bond_denom` is `astr`, and the unbonding period is 2 weeks instead of 3 weeks.
 
 ```json
     "staking": {
       "params": {
-        "unbonding_time": "1814400000000000",
+        "unbonding_time": "1209600000000000",
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 0,

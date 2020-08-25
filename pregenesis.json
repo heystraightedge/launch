@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2020-09-15T12:00:00Z",
+  "genesis_time": "2020-09-15T18:00:00.00000Z",
   "chain_id": "straightedge-1",
   "consensus_params": {
     "block": {
@@ -9,7 +9,7 @@
     },
     "evidence": {
       "max_age_num_blocks": "1000000",
-      "max_age_duration": "1814400000000000"
+      "max_age_duration": "1209600000000000"
     },
     "validator": {
       "pub_key_types": [
@@ -67971,7 +67971,7 @@
     },
     "staking": {
       "params": {
-        "unbonding_time": "1814400000000000",
+        "unbonding_time": "1209600000000000",
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 0,
@@ -68049,7 +68049,7 @@
     },
     "evidence": {
       "params": {
-        "max_evidence_age": "1814400000000000"
+        "max_evidence_age": "1209600000000000"
       },
       "evidence": []
     },
