@@ -1,4 +1,4 @@
-# Straightedge Testnet Genesis Parameters
+# Straightedge Mainnet Genesis Parameters
 
 ## Tendermint Params
 
@@ -35,7 +35,7 @@ These parameters are the same as cosmoshub-3, except that the `max_age_duration`
 
 ### Router
 
-For the testnet, we will start with the no routes disabled.
+We have no routes disabled.
 ```json
     "router": {
       "disabled_routes": []
