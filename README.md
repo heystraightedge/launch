@@ -22,7 +22,7 @@ In Edgeware, 10% of the initial distribution was distributed as a founder's rewa
 
 ## Functionality
 
-Similar to the [Cosmos Hub codebase (Gaia)](https://github.com/cosmos/gaia), the Straightedge blockchain inherits much of its functionality from the [core modules of the cosmos sdk](https://github.com/cosmos/cosmos-sdk/tree/master/x).  It uses the standard bank, staking, slashing, governance, and upgrade modules of the Cosmos SDK.
+Similar to the [Cosmos Hub codebase (Gaia)](https://github.com/cosmos/gaia), the Straightedge blockchain inherits much of its functionality from the [core modules of the cosmos sdk](https://github.com/cosmos/cosmos-sdk/tree/master/x).  It uses the standard bank, staking, slashing, governance, upgrade, and crisis modules of the Cosmos SDK.
 
 It also includes the [CosmWasm module](https://github.com/cosmwasm/wasmd/tree/master/x/wasm), a project built to allow WebAssembly-based smart contracting in the Cosmos SDK.  For more information of CosmWasm and tutorials on how to get started with using it, please check out the [CosmWasm website](https://www.cosmwasm.com/).
 
