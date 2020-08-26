@@ -45,7 +45,7 @@ strcli keys add <your-key-name> --algo sr25519 --recover
 <insert-mnemonic-here>
 ```
 
-1. Check your [astr](../README.md#str-token) balance in the genesis allocation using the address created in the previous command.
+4. Check your [astr](../README.md#str-token) balance in the genesis allocation using the address created in the previous command.
 
 ```sh
 grep -A 6 <your-address> genesis.json
