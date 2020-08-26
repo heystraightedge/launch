@@ -10,6 +10,10 @@ If you are interested in becoming a genesis validator, you must have a balance i
 
 **Instructions for submitting genesis staking transactions can be found [here](./gentxs/README.md).**
 
+## Community
+
+To join the community and stay up to date on the latest information on the Straightedge launch, please join the [Discord](https://discord.gg/rbamhbC).  If you're interested in running a validator, please join the #validators channel!
+
 ## Recreating Pre-Genesis
 
 If you wish to verify the generation of [pregenesis.json](pregenesis.json) yourself, follow the steps [here](building-pregenesis/README.md).

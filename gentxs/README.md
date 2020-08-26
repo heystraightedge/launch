@@ -4,8 +4,16 @@ This document includes instructions for validators who intend to participate in 
 
 1. You must have a genesis allocation in the Straightedge mainnet, meaning you must have participated in the Edgeware Lockdrop according to the [modified Straightedge rules](https://straighted.ge/faq/).
 2. This process is intended for technically inclined people who have participated in other `cosmos-sdk` based blockchain launches. Experience running production IT systems is strongly recommended.
-3. STR staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and slashed STR are not expected to be recoverable by any means. Additionally, if you double-sign, your validator will be tombstoned and you will be required to change operator and signing keys.
-4. You will be creating public key accounts that are restored via their mnemonic. It is vital that you securely backup and store your mnemonic for any accounts that are created during this process. **Failure to do so can result in the irrecoverable loss of all STR tokens**.
+
+Please join the #validators channel on the [Straightedge Discord](https://discord.gg/rbamhbC) for any questions or help!
+
+### Disclaimer:
+
+STR staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and slashed STR are not expected to be recoverable by any means. Additionally, if you double-sign, your validator will be tombstoned and you will be required to change operator and signing keys.
+
+You will be creating public key accounts that are restored via their mnemonic. It is vital that you securely backup and store your mnemonic for any accounts that are created during this process. **Failure to do so can result in the irrecoverable loss of all STR tokens**.
+
+## Instructions
 
 #### Prepare Software
 
@@ -79,3 +87,4 @@ git push
 
 9. Open a PR to this repo with your gentx
 10. Submit by September 8, 2020 at 12:00pm UTC.
+11. Join the #validators channel of the [Straightedge Discord](https://discord.gg/rbamhbC) for directions on next steps to launch network.
