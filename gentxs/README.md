@@ -4,6 +4,7 @@ This document includes instructions for validators who intend to participate in 
 
 1. You must have a genesis allocation in the Straightedge mainnet, meaning you must have participated in the Edgeware Lockdrop according to the [modified Straightedge rules](https://straighted.ge/faq/).
 2. This process is intended for technically inclined people who have participated in other `cosmos-sdk` based blockchain launches. Experience running production IT systems is strongly recommended.
+3. It is recommended you follow this process on the machine that will run the validator, so that the consensus public key and the seed node information included in your gentx is correct.
 
 Please join the #validators channel on the [Straightedge Discord](https://discord.gg/rbamhbC) for any questions or help!
 
@@ -69,7 +70,7 @@ strd gentx \
   --name <key_name>
 ```
 
-**NOTE:**  If you would like to override the memo field use the `--ip` and `--node-id` flags for the `strd gentx` command above.
+**NOTE:**  If you would like to override the memo field, use the `--ip` and `--node-id` flags for the `strd gentx` command above.
 
 This will produce a file in the `~/.strd/config/gentx/` folder that has a name with the format `gentx-<node_id>.json`.
 
