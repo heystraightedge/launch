@@ -22,7 +22,7 @@ If you wish to verify the generation of [pregenesis.json](pregenesis.json) yours
 
 The native token of the Straightedge network is known as STR.
 
-The initial supply of the STR token is 5 billion STR.  Of this, 90% is distributed based on the participation from the Edgeware lockdrop, modified to ignore signals from deployers of contracts.  Further details about this matter can be found in [this blog post](https://medium.com/straightedge/on-the-straightedge-genesis-block-d073e78b9b02).
+The initial supply of the STR token is 5 billion STR.  Of this, 90% is distributed based on the participation from the Edgeware lockdrop, modified to ignore signals from deployers of contracts.  Further details about this matter can be found in [this FAQ](https://straighted.ge/faq/).
 
 In Edgeware, 10% of the initial distribution was distributed as a founder's reward to Commonwealth Labs, Parity Technologies, and a community fund managed by Commonwealth Labs.  In the initial Straightedge distribution, this 10% (500 million tokens) is deposited directly into the on-chain governed community pool.  It is encouraged that this be distributed by governance as a founder's reward to entities that were instrumental in the creation of the Straightedge network.
 
