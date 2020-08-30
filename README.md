@@ -20,11 +20,13 @@ If you wish to verify the generation of [pregenesis.json](pregenesis.json) yours
 
 ## STR Token
 
-The native token of the Straightedge network is known as STR.  The smallest denomination of STR is called `astr`.  There are `10^18` astr in 1 STR and the SI prefix for `10^-18` is called "atto", thus `astr` is short for `atto-STR`.  It also sounds like "astro", a fitting name for Straightedge as a Cosmic Smart Contracting platform.
+The native token of the Straightedge network is known as STR.
 
 The initial supply of the STR token is 5 billion STR.  Of this, 90% is distributed based on the participation from the Edgeware lockdrop, modified to ignore signals from deployers of contracts.  Further details about this matter can be found in [this blog post](https://medium.com/straightedge/on-the-straightedge-genesis-block-d073e78b9b02).
 
 In Edgeware, 10% of the initial distribution was distributed as a founder's reward to Commonwealth Labs, Parity Technologies, and a community fund managed by Commonwealth Labs.  In the initial Straightedge distribution, this 10% (500 million tokens) is deposited directly into the on-chain governed community pool.  It is encouraged that this be distributed by governance as a founder's reward to entities that were instrumental in the creation of the Straightedge network.
+
+Just like the smallest unit of Bitcoin and Ether are satoshis and wei respectively, the smallest unit of STR is an `astr` (atto-STR).  There are 10^18 `astr` in 1 STR.
 
 ## Functionality
 
