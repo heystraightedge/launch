@@ -20,7 +20,7 @@ You will be creating public key accounts that are restored via their mnemonic. I
 
 1. Install `strd` tag `v0.1.0`
 
-##### Requires Go 1.14+ and gcc
+##### Requires Go 1.14+ ([instructions](https://golang.org/doc/install)) and gcc
 
 ```sh
 git clone https://github.com/heystraightedge/straightedge
