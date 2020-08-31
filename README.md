@@ -8,7 +8,7 @@ The codebase can be found [here](https://github.com/heystraightedge/straightedge
 
 If you are interested in becoming a genesis validator, you must have a balance in the genesis file, by having participated in the Edgeware lockdrop.
 
-**Instructions for submitting genesis staking transactions can be found [here](./gentxs/README.md).**
+**Instructions for submitting genesis staking transactions can be found [here](./gentxs/README.md).  The deadline for submission is Sept 8th.**
 
 ## Community
 
