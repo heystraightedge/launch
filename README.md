@@ -4,12 +4,6 @@ This repository is to coordinate the launch of the Straightedge mainnet, rebuilt
 
 The codebase can be found [here](https://github.com/heystraightedge/straightedge).
 
-## Genesis Validators
-
-If you are interested in becoming a genesis validator, you must have a balance in the genesis file, by having participated in the Edgeware lockdrop.
-
-**Instructions for submitting genesis staking transactions can be found [here](./gentxs/README.md).  The deadline for submission is Sept 8th.**
-
 ## Community
 
 To join the community and stay up to date on the latest information on the Straightedge launch, please join the [Discord](https://discord.gg/rbamhbC).  If you're interested in running a validator, please join the #validators channel!
