@@ -58,8 +58,8 @@ EOF
 6. Start the node.
 
 ```sh
-sudo systemctl enable kvd
-sudo systemctl start kvd
+sudo systemctl enable strd
+sudo systemctl start strd
 ```
 
 ---
