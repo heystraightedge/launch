@@ -6,7 +6,7 @@ Please join the #validators channel on the [Straightedge Discord](https://discor
 
 ## Instructions
 
-1. Replace pregenesis file with final genesis (including gentxs). `strd` tag `v0.1.0`
+1. Replace pregenesis file with final genesis (including gentxs).
 
 ```sh
 rm ~/.strd/config/genesis.json
