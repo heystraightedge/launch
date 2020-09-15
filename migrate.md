@@ -8,8 +8,9 @@ You can migrate your tokens at any time, there is no deadline to do this.
 
 ## Setting up strcli
 
-You must either download the straightedge binary from [here](https://github.com/heystraightedge/straightedge/releases/tag/v0.1.0) and name it "strcli" or compile it from source in the launch repository https://github.com/heystraightedge/straightedge.
-Either place this binary in the same folder as the `strcli` binary, or ensure `strcli` is in your path.
+You can download the straightedge binary from [here](https://github.com/heystraightedge/straightedge/releases/tag/v0.1.0), rename it "strcli", and ensure that it is your PATH.
+
+Or you compile it from source in the launch repository https://github.com/heystraightedge/straightedge (requires Go to be installed).
 
 ## Mac OS X
 
