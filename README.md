@@ -22,6 +22,15 @@ In Edgeware, 10% of the initial distribution was distributed as a founder's rewa
 
 Just like the smallest unit of Bitcoin and Ether are satoshis and wei respectively, the smallest unit of STR is an `astr` (atto-STR).  There are 10^18 `astr` in 1 STR.
 
+## Claiming tokens
+
+If you have tokens in the genesis file, and you wish to convert them into a key type that works with wallets, see [this page](./migrate.md)
+
+## Delegation
+
+To delegate your STR token to a validator, use the `strcli tx staking delegate` command. 
+Validator addresses can be found on any explorer. 
+
 ## Functionality
 
 Similar to the [Cosmos Hub codebase (Gaia)](https://github.com/cosmos/gaia), the Straightedge blockchain inherits much of its functionality from the [core modules of the cosmos sdk](https://github.com/cosmos/cosmos-sdk/tree/master/x).  It uses the standard bank, staking, slashing, governance, upgrade, and crisis modules of the Cosmos SDK.

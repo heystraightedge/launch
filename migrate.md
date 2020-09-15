@@ -15,6 +15,27 @@ At this time, the cosmwasm library does not compile on windows, and as a consequ
 
 We provide a python script to ease the transition process for mac os users. At the end you will be prompted for your keychain password in order to execute the final transaction.
 
+To run this do:
+```
+curl https://raw.githubusercontent.com/heystraightedge/launch/master/migrate.py
+python migrate.py
+```
+
+(If python3 is your default python version, you may have to do `python2 migrate.py`)
+
+Here is a sample execution of this, with a fake mnemonic
+```
+$ curl https://raw.githubusercontent.com/heystraightedge/launch/master/migrate.py
+$ python migrate.py
+Please enter your bip39 mnemonic
+fake mnemonic fake mnemonic
+Claiming 1000000000000000000000astr
+Your new key (name in keybase is: new_secp256k1_key ) has address: str1sq089pzsn65wmycrvch3sk25jtfy29vusf0fd2
+Please enter your keychain password for the following tx 1000000000000000000000astr
+```
+At this point you are prompted to enter your keychain password, and at the end you will see a tx hash for your transaction being included in the network.
+
+
 ## Linux
 
 Execute the following commands to claim your funds:
