@@ -1,6 +1,8 @@
-# Migrating your straightedge tokens to secp keys
+# Migrating your STR Tokens to secp keys
 
-All users with a genesis allocation have their STR tokens initially in an account type that wallets do not yet support. We provide instructions CLI commands here that allow you to migrate these tokens into a new secp256k1 key under the same mnemonic you already had, and which wallets should support. These instructions are separated by OS.
+All users with a genesis allocation have their STR tokens initially in an account with an sr25519 key.  However, most Cosmos wallets do not yet support sr25519 keys, and so we recommend transferring your tokens to a new account with a secp256k1 key.  We provide instructions CLI commands here that allow you to migrate these tokens into a new secp256k1 key under the same mnemonic you already had.
+
+These instructions are separated by OS. At this time, the cosmwasm library does not compile on windows, and as a consequence nor does straightedge. Windows users will have to wait to migrate their tokens.
 
 You can migrate your tokens at any time, there is no deadline to do this.
 
@@ -8,8 +10,6 @@ You can migrate your tokens at any time, there is no deadline to do this.
 
 You must either download the straightedge binary from [here](https://github.com/heystraightedge/straightedge/releases/tag/v0.1.0) and name it "strcli" or compile it from source in the launch repository https://github.com/heystraightedge/straightedge.
 Either place this binary in the same folder as the `strcli` binary, or ensure `strcli` is in your path.
-
-At this time, the cosmwasm library does not compile on windows, and as a consequence nor does straightedge. Windows users will have to wait to migrate their tokens.
 
 ## Mac OS X
 
