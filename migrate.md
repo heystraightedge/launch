@@ -8,7 +8,7 @@ You can migrate your tokens at any time, there is no deadline to do this.
 
 ## Setting up strcli
 
-You can download the straightedge binary from [here](https://github.com/heystraightedge/straightedge/releases/tag/v0.1.0), rename it "strcli", and ensure that it is your PATH.
+You can download the straightedge CLI binary from [here](https://github.com/heystraightedge/straightedge/releases/tag/v0.1.0), rename it "strcli", and mark it as executable by running `chmod +x strcli` from the command line. Place the binary in a location that is in your path, such as `/usr/local/bin`. (Do `echo $PATH` to see a list of such locations)
 
 Or you compile it from source in the launch repository https://github.com/heystraightedge/straightedge (requires Go to be installed).
 
@@ -16,7 +16,7 @@ Or you compile it from source in the launch repository https://github.com/heystr
 
 We provide a python script to ease the transition process for mac os users. At the end you will be prompted for your keychain password in order to execute the final transaction.
 
-To run this do:
+To run this, execute the following commands:
 ```
 curl https://raw.githubusercontent.com/heystraightedge/launch/master/migrate.py
 python migrate.py

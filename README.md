@@ -29,7 +29,7 @@ If you have tokens in the genesis file, and you wish to convert them into a key 
 ## Delegation
 
 To delegate your STR token to a validator, use the `strcli tx staking delegate` command. 
-Validator addresses can be found on any explorer. 
+Validator addresses to delegate to can be found on any explorer, such as http://explorer.straighted.ge/
 
 ## Functionality
 
