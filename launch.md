@@ -16,7 +16,7 @@ curl https://raw.githubusercontent.com/heystraightedge/mainnet/master/genesis.js
 2. Add seed nodes and persistent peers to `config.yaml`
 
 ```sh
-sed -i -e 's/persistent_peers = ""/persistent_peers = "d564ddb8017341e2bedf21487ae1d5b6d4797538@104.248.126.170:26656,346ec9481a0602ccf8d9b53138478302d0b771e9@54.36.124.100:26656,7539c53eb9893a72f2e6452ffbff4a67b9cfbec2@192.168.1.4:26656,ef29383c769d4ff7332d4c819807bb515c601067@134.122.32.31:26656,fab01981f7224665808585603dc3d68053b901cb@192.168.178.31:26656"/g' ~/.strd/config/config.toml
+sed -i -e 's/persistent_peers = ""/persistent_peers = "d564ddb8017341e2bedf21487ae1d5b6d4797538@104.248.126.170:26656,346ec9481a0602ccf8d9b53138478302d0b771e9@54.36.124.100:26656,7539c53eb9893a72f2e6452ffbff4a67b9cfbec2@35.221.39.7:26656,ef29383c769d4ff7332d4c819807bb515c601067@134.122.32.31:26656"/g' ~/.strd/config/config.toml
 
 sed -i -e 's/seeds = ""/seeds = "8ad635f89a1595fad6b7b0236252b89f57d62efe@45.55.55.244:26656"/g' ~/.strd/config/config.toml
 ```
