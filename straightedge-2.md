@@ -2,7 +2,7 @@
 
 This document provides instructions for restarting your node to upgrade to straightedge-2 after the network halt in straightedge-1 due to a bug.
 
-straightedge-2 
+straightedge-2 is based on an export from straightedge-1 at the last finalized block.  The only irregular state change is that the downtime slashing was switched to triggering after "50 missed blocks in a 100 block window" to "1000 missed blocks in a 10000 block window".
 
 1. Shut down your current node.
 2. Download the straightedge software v0.2.0
@@ -16,6 +16,7 @@ make install
 
 Verify you are currently running the correct version (v0.2.0) of Straightedge:
 
+```
 $ strd version --long
 name: straightedge
 server_name: strd
@@ -24,6 +25,7 @@ version: 0.2.0
 commit: c6815c2ef96dca3407579365e4ece7adad57e83c
 build_tags: netgo
 go: go version go1.14.6 linux/amd64
+```
 
 
 3. Reset your node's state
