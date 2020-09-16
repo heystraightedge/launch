@@ -49,4 +49,10 @@ jq -S -c -M '' ~/.strd/config/genesis.json | shasum -a 256
 
 should return you `d2674a19c83e01d575ebbd92a35ff7d0eab72117332dd6e70f72d3b9cfd83140`.
 
-5. Restart your node.  The network will restart once enough validators come back online.
+5. Delete your old p2p addrbook.
+
+```sh
+rm ~/.strd/config/addrbook.json
+```
+
+6. Restart your node.  The network will restart once enough validators come back online.
