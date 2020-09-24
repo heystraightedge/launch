@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline' *;">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval';">
     <title></title>
     <script src="main.js"></script> 
 </head>
 <body>
-    <input type="textbox" value="Type here">
+    <input id='mnemonic_input' type="textbox" value="Type here">
     <input type="button" value="Click me" onclick="window.foo()">
 </body>
 </html>
