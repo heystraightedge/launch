@@ -1,0 +1,12 @@
+{
+  "name": "str_migrate",
+  "version": "1.0.0",
+  "description": "A package to migrate sr25519 keys to secp256k1",
+  "main": "index.js",
+  "author": "@sikkatech",
+  "license": "MIT",
+  "dependencies": {
+    "@polkadot/keyring": "^3.4.1",
+    "@polkadot/util-crypto": "^3.4.1"
+  }
+}
