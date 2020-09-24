@@ -138,7 +138,7 @@ window.foo = async function foo() {
   // set memo / fees
   const memo = "sr25519 to secp key migration";
   // amount required is per what the RPC accepts
-  const fee_coins = {amount: "125000000000000000", denom: "astr"}
+  const fee_coins = {denom: "astr", amount: "125000000000000000"}
   const fee = {
     amount: [fee_coins],
     gas: "5000000",
